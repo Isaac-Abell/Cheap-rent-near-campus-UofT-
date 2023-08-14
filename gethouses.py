@@ -3,6 +3,13 @@ from selenium.webdriver.common.by import By
 import time
 import math
 
+
+/**
+ * Returns a list of houses under the max price with more than the minimum number of beds
+ * @param max_price The maximum rent of the house
+ * @param min_beds The minimum number of beds the house must have
+ * @returns An list of lists that contain the suitable houses': locations, prices, number of beds, and links to the houses
+ */
 def get_houses(max_price: int, min_beds: int, pages_checked = None):
 
     browser = webdriver.Chrome()
