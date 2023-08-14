@@ -3,8 +3,6 @@ from selenium.webdriver.common.by import By
 import time
 import math
 
-
-
 def get_houses(max_price: int, min_beds: int, pages_checked = None):
     """
     Returns a list of houses that are priced under the specified maximum price and have more
