@@ -24,7 +24,8 @@ def find-cheap-rent(min, price, rooms):
     end = "31 King's College Circle"
     
     good_distance = []
-    
+
+    // Uses the google matrix api to find the distance between the houses and the school
     for house in houses:
         start = house[0]
         distance = gmaps.distance_matrix(start, end, mode='walking')["rows"][0]["elements"][0]["duration"]["text"]
