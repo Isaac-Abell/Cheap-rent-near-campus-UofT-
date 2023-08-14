@@ -2,6 +2,13 @@ import googlemaps
 import pandas as pd
 from gethouses import get_houses
 
+/**
+ * Returns a pandas dataframe with all the houses that are within the parameters and makes an excel spreadsheet with the info
+ * @param min The maximum time it should take to walk to uoft
+ * @param price The maximum rent the house should be
+ * @param rooms The minimum number of rooms the house should have
+ * @returns A pandas dataframe with all the houses that fit the parameters
+ */
 def find-cheap-rent(min, price, rooms):
     //make another file called key.txt that contains your api key for the distance marix api
     API = open("key.txt", "r")
